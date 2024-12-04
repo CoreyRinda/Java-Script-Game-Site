@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Uno! - Rinda Games</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <script src="js/uno3.js"></script>
+    </head>
+    <body>
+        <ul>
+            <li><a href="craps.html">Craps</a></li>
+            <li><a class="active" href="uno.html">Uno</a></li>
+            <li style="float:right"><a href="about.html">About</a></li>
+        </ul>
+
+        <div id="preGame" style="display: block;">
+            <h1 class="gametitle">Uno Card Game</h1>
+            <h1 class="currentroll">Choose Player Count</h1>
+
+            <span id="playerCount">
+                <button id="PlayersTwo" onclick="setPlayerTwo()" class="playerCount, enabled">2 Player</button>
+            </span>
+            <p></p>
+            <button id="StartGame" onclick="startGame()">Start Game</button>
+        </div>
+
+        <div id="UnoGameBoard" style="display: none;">
+            <h1 class="gametitle">Uno Card Game</h1>
+
+            <div class="lower">
+                <h1 id="AI_Name" class="currentroll">AI</h1>
+                <!-- <p id="aiTop">Cards: </p> -->
+                <span id="AI1Cards">
+                    <!-- JavaScript Dynamically adds the elements to be shown here -->
+                </span>
+                <p id="aiTopCardTotal">Card Total: </p>
+
+                <span>
+                    <img id="DrawPile" src="uno_cards/uno_back.png" onclick="drawCard()" alt="">
+                    <img id="DiscardPile" src="" alt="">
+                </span>
+
+                <p id="playerBottomCardTotal">Card Total: </p>
+                <span id="playerCards">
+                    <!-- JavaScript Dynamically adds the elements to be shown here -->
+                </span>
+                <!-- <p id="playerBottom">Cards: </p> -->
+                <h1 id="Player_Name" class="currentroll">You</h1>
+                
+                <button id="NewGame" onclick="resetGame()" class="playerCount, enabled" style="visibility: hidden;">New Game</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy Rinda Games - 2024</p>
+        </div>
+    </body>
+</html>
