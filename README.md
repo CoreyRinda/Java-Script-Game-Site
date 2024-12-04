@@ -6,3 +6,6 @@ Game of Craps
 
 Game of Uno
 ![image](https://github.com/user-attachments/assets/f74b3304-880d-4cd1-8ce6-42c930b8ae74)
+
+Uno verus AI
+![image](https://github.com/user-attachments/assets/897024b3-ccdf-43a4-b331-02a27cccd339)
