@@ -1,0 +1,230 @@
+/* Nav Bar Styles */
+div#navbar {
+  background-color: #333;
+}
+
+ul {
+    list-style-type: none;
+    border: 0px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial;
+  }
+  
+  /* Black on hover*/
+  li a:hover {
+    background-color: #111;
+  }
+  .active {
+    background-color: green;
+  }
+
+
+/* Roll Button Styles */
+ button#RollDiceButton {
+    background-color: green;
+    color: white;
+    font-family: arial;
+    padding: 14px 40px;
+    border: 0px;
+    border-radius: 10px;
+    width: 175px;
+    height: 60px;
+    font-size: 16px;
+    text-align: center;
+  }
+  button#RollDiceButton.enabled:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+  }
+  button.disabled {
+    cursor: default;
+    opacity: 0.6;
+  }
+
+  /* ---------- Uno! Game Styles ---------- */ 
+  /* ----- Uno! class='preGame' ----- */ 
+  div#preGame {
+    margin-left: 50;
+    margin-top: 15px;
+    align-content: center;
+    text-align: center;
+  }
+  .lower {
+    margin-top:100px;
+    user-select: none;
+  }
+
+  div#preGame button{
+    background-color: green;
+    color: white;
+    font-family: arial;
+    padding: 14px 40px;
+    border: 0px;
+    border-radius: 10px;
+    width: 175px;
+    height: 60px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  div#preGame button.enabled:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+  }
+  
+  div#preGame button:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+  }
+
+  span#playerCount button.active {
+    background-color: darkgreen;
+    cursor: default;
+  }
+
+
+  button#NewGame {
+    background-color: green;
+    color: white;
+    font-family: arial;
+    padding: 14px 40px;
+    border: 0px;
+    border-radius: 10px;
+    width: 175px;
+    height: 60px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  button#NewGame:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+  }
+  /* ----- Uno! class='UnoGameBoard' ----- */
+  div#UnoGameBoard {
+    margin-left: 50;
+    margin-top: 15px;
+    align-content: center;
+    text-align: center;
+    font-family: arial;
+  }
+  div#UnoGameBoard img{
+    width: 120px;
+    height: 180px;
+  }
+  img#DrawPile {
+    width: 120px;
+    height: 180px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 25px;
+  }
+  img#DiscardPile {
+    width: 120px;
+    height: 180px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+  }
+  span#cardPiles {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  span#playerCards img {
+    width: 120px;
+    height: 180px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-right: -25px;
+    margin-left: -25px
+  }
+  span#AI1Cards img {
+    width: 120px;
+    height: 180px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-right: -25px;
+    margin-left: -25px
+  }
+
+/* ----- Misc Styles ----- */
+  span#dice img {
+    height: 64px;
+    width: 64px;
+    border-radius: 5px;
+  }
+
+  div#GameBoard p {
+    font-family: arial;
+    font-size: 20px;
+  }
+
+  h1#GameCondition {
+    font-family: arial;
+    font-weight: 900;
+  }
+
+  div#GameBoard {
+    margin-left: 50;
+    margin-top: 15px;
+    align-content: center;
+    text-align: center;
+  }
+
+  h1.currentroll {
+    font-family: arial;
+    cursor: default;
+  }
+  
+  h1.gametitle {
+    font-family: arial;
+    font-weight: 600;
+    font-size: 50px;
+    cursor: default;
+  }
+
+  body {
+    margin: 0;
+    border: 0px;
+  }
+
+  .footer {
+    margin: 0;
+    background-color: #333;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: arial;
+  }
+
+  div#About {
+    font-family: arial;
+    font-size: 20px;
+    margin-left: 50;
+    margin-top: 15px;
+    align-content: center;
+    text-align: center;
+  }
