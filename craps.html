@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Craps - Rinda Game</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <script src="js/craps.js"></script>
+    </head>
+    <body>
+        <div id="navbar">
+            <ul>
+                <li><a class="active" href="craps.html">Craps</a></li>
+                <li><a href="uno.html">Uno</a></li>
+                <li style="float:right"><a href="about.html">About</a></li>
+            </ul>
+        </div>
+
+        <div id="GameBoard">
+            <h1 class="gametitle">Craps Casino Game</h1>
+            <h1 class="currentroll">Current Roll</h1>
+            <span id="dice" style="user-select: none;">
+                <img id="dice1" src="dice_img/dice1.png" alt="dice_img/dice1.png">
+                <img id="dice2" src="dice_img/dice1.png" alt="dice_img/dice1.png">
+            </span>
+            <p id="rollTotal">2</p>
+            <button onclick="gameStart()" id="RollDiceButton" class="enabled">Inital Roll</button>
+            <p id="point">Point: Roll for Point</p>
+            <h1 id="GameCondition" style="visibility: hidden; color: black;">You Win/Lose</h1>
+            <p id="wintotal">Wins: 0</p>
+            <p id="losstotal">Losses: 0</p>
+            <p id="winrate">Win Rate: 0.00%</p>
+        </div>
+
+        <div class="footer">
+            <p>&copy Rinda Games - 2024</p>
+        </div>
+    </body>
+</html>
